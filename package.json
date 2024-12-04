@@ -1,20 +1,22 @@
 {
-  "name": "winston-logger",
-  "version": "1.0.0",
-  "description": "winston custom logger",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "keywords": [],
+  "name": "hidrajs-winston-logger",
+  "version": "1.0.1",
+  "description": "@hidrajs/winston-logger winston custom logger package",
+  "main": "dist/logger.js",
+  "types": "dist/logger.d.ts",
+  "keywords": [
+    "logger"
+  ],
   "author": "hdrajs",
   "license": "ISC",
   "scripts": {
-    "build": "rmdir dist && tsc",
-    "release": "npm build && npm publish",
+    "build": "rm -rf dist && tsc",
+    "release": "pnpm build && pnpm publish --access public --no-git-checks",
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hoanledev/bank-qr.git"
+    "url": "git+https://github.com/hidrajs/winston-logger.git"
   },
   "dependencies": {
     "util": "^0.12.5",
