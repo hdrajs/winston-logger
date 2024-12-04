@@ -1,0 +1,27 @@
+{
+  "name": "winston-logger",
+  "version": "1.0.0",
+  "description": "winston custom logger",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [],
+  "author": "hdrajs",
+  "license": "ISC",
+  "scripts": {
+    "build": "rmdir dist && tsc",
+    "release": "npm build && npm publish",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoanledev/bank-qr.git"
+  },
+  "dependencies": {
+    "util": "^0.12.5",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
